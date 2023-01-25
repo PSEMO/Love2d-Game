@@ -416,23 +416,3 @@ function RandNumber()
 
     return math.random()
 end
-
-
-
---local P = PosFromRadian(AngleToRaidan(AngleToUse))
---local BulletDirection = CalculateDirection(Bullet.PosX, Bullet.PosY, Corpse.PosX, Corpse.PosY) 
---local BulletsAngle = CalculateAngle(0, 0, Bullet.directionX, Bullet.directionY)
---local CorpseAngle = CalculateAngle(0, 0, BulletDirection.X, BulletDirection.Y)
---local MiddleAngle = (BulletsAngle + CorpseAngle) / 2
---local AngleToUse = MiddleAngle + ((Corpse.Radius / 4) * RN1) + ((Corpse.Radius / 4) * RN2)
-
---local StartP = { X = Bullet.directionX, Y = Bullet.directionY}
---local EndP = CalculateDirection(Bullet.PosX, Bullet.PosY, Corpse.PosX, Corpse.PosY)
---local StartRad = CalculateRadian(0, 0, StartP.X, StartP.Y) + 6.28
---local EndRad = CalculateRadian(0, 0, EndP.X, EndP.Y) + 6.28
---
---local RadDif = (StartRad - EndRad)
---while RadDif > 6.28 do
---    RadDif = RadDif - 6.28
---end
---local P = PosFromRadian(StartRad + (RadDif * RandNumber()))
